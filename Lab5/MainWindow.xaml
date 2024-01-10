@@ -1,0 +1,19 @@
+﻿<Window x:Class="Lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Task Manager" Height="350" Width="525">
+    <Grid>
+        <StackPanel Margin="10">
+            <Button Content="Добавить новую задачу" Click="AddTask_Click" Margin="0,0,0,10" FontSize="14"/>
+            <Button Content="Показать все задачи" Click="ShowAllTasks_Click" Margin="0,0,0,10" FontSize="14"/>
+            <Button Content="Найти задачу по приоритету" Click="FindTaskByPriority_Click" Margin="0,0,0,10" FontSize="14"/>
+            <Button Content="Показать самую приоритетную задачу" Click="ShowTopPriorityTask_Click" Margin="0,0,0,10" FontSize="14"/>
+            <Button Content="Показать задачу, которая ближе всех к дедлайну" Click="ShowClosestDeadlineTask_Click" Margin="0,0,0,10" FontSize="14"/>
+            <Button Content="Удалить задачу" Click="RemoveTask_Click" Margin="0,0,0,10" FontSize="14"/>
+            <Button Content="Выйти" Click="Exit_Click" FontSize="14"/>
+        </StackPanel>
+    </Grid>
+</Window>
